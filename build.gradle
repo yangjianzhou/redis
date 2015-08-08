@@ -1,0 +1,19 @@
+apply  plugin : "java"
+apply  plugin : "idea"
+
+idea{
+    module{
+        downloadSources = true
+        downloadJavadoc = true
+    }
+
+}
+
+repositories{
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies{
+    compile  'redis.clients:jedis:2.7.2'
+}
